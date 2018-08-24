@@ -67,6 +67,7 @@ namespace UItestApp
             this.button2.Text = "Comfirm";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Enabled = false;
             // 
             // button3
             // 
@@ -93,7 +94,7 @@ namespace UItestApp
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(150, 22);
             this.textBox2.TabIndex = 4;
-            this.textBox2.
+            this.textBox2.Enabled = false;
             // 
             // label1
             // 

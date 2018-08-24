@@ -24,23 +24,22 @@ namespace UItestApp
             textBox2.Enabled = false;
             button2.Enabled = false;
 
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string passward = "123456";
-            if (textBox1.Text!= passward)
-            {
-                label3.Text = "密碼錯誤,請重新輸入";
-                textBox1.Clear();
-            }
-            else
+            if (textBox1.Text == passward)
             {
                 label3.Text = "請輸入提款金額";
                 textBox2.Enabled = true;
                 button2.Enabled = true;
                 textBox2.Focus();
+            }
+            else
+            {
+                label3.Text = "密碼錯誤,請重新輸入";
+                textBox1.Clear();
             }
         }
 
